@@ -1,7 +1,0 @@
-<svg viewBox="0 0 100 100" width="60" height="60" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="50" cy="50" r="40" stroke="lightgray" stroke-width="8" fill="none" />
-   <text x="50" y="50" text-anchor="middle" dominant-baseline="middle" font-size="40" font-family="Lato, sans-serif" fill="black">4</text>
-  <circle cx="50" cy="50" r="40" stroke="#e63a1c" stroke-width="8" fill="none" stroke-dasharray="150.796, 100.531" stroke-dashoffset="0" transform="rotate(-90 50 50)">
-    <animate attributeName="stroke-dasharray" values="0, 251.327; 200.796, 150.531" dur="2s" fill="freeze" />
-  </circle>
-</svg>
