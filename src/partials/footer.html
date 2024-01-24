@@ -1,0 +1,82 @@
+<footer id="footer" class="footer">
+  <div class="footer-top contacts">
+    <div class="contacts-container container grid">
+      <div class="contacts-info">
+        <h2 class="contacts-info__title">Наші контакти</h2>
+        <span class="contacts-info__address flex">
+          <svg>
+            <use xlink:href="img/sprite.svg#map"></use>
+          </svg>
+          Виїзд комп'ютерного майстра <br />по всьому м. Києву
+        </span>
+        <span class="contacts-info__phone flex">
+          <svg>
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+          +380-93-733-98-38
+        </span>
+        <span class="contacts-info__time flex">
+          <svg>
+            <use xlink:href="img/sprite.svg#time"></use>
+          </svg>
+          Пн. - Пт. с 9.00 - 18.00 <br />Сб. - Вс. 10.00 - 16.00
+        </span>
+      </div>
+      <!-- <form class="contacts-form"> -->
+      <form class="contacts-form">
+        <h3>Залишились питання? Ми готові відповісти на них!</h3>
+        <div class="contacts-form__wrapper">
+          <label class="contacts-form__field flex">
+            <span class="contacts-form__text"
+              >Імʼя<span class="color-text"> *</span></span
+            >
+            <input type="text" name="name" class="contacts-form__input" />
+          </label>
+          <label class="contacts-form__field flex">
+            <span class="contacts-form__text"
+              >Телефон<span class="color-text"> *</span></span
+            >
+            <input type="tel" name="tel" class="contacts-form__input" />
+          </label>
+        </div>
+        <label class="contacts-form__field flex">
+          <span class="contacts-form__text"
+            >Питання<span class="color-text"> *</span></span
+          >
+          <textarea
+            maxlength="400"
+            name="problem"
+            class="contacts-form__input contacts-form__input-big"
+          ></textarea>
+        </label>
+        <p class="contacts-form__text text">
+          <span class="color-text">*</span> - Поле обов'язкове до заповнення
+        </p>
+        <button class="contacts-form__btn btn-reset flex" type="submit">
+          відправити
+          <svg>
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+        <div class="success">форма відправлена</div>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom__container container flex">
+      <a href="#">
+        <div class="footer-logo flex">
+          <p class="footer-logo-title text">CitiCom</p>
+          <p class="footer-logo-descr text">Ремонт комп'ютерної техніки</p>
+        </div>
+      </a>
+      <a class="footer-bottom__contact flex" href="tel:+380937339838">
+        <svg>
+          <use xlink:href="img/sprite.svg#phone"></use>
+        </svg>
+        +38-093-733-98-38
+      </a>
+    </div>
+  </div>
+</footer>

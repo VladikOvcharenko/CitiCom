@@ -1,0 +1,11 @@
+.about-us {
+  padding: 200px 0;
+  &-title {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 70%;
+  }
+  &-descr {
+    margin-top: 20px;
+  }
+}

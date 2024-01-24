@@ -1,0 +1,45 @@
+.brands {
+  padding-top: var(--padding-container);
+  margin-bottom: 200px;
+  h2 {
+    text-align: center;
+  }
+  &-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    &__item {
+      max-width: 178px;
+      width: 100%;
+      gap: 40px;
+      height: 120px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      &.apple {
+        background-image: url('../img/brands/apple.webp');
+      }
+      &.dell {
+        background-image: url('../img/brands/dell.webp');
+      }
+      &.lenovo {
+        background-image: url('../img/brands/lenovo.webp');
+      }
+      &.hp {
+        background-image: url('../img/brands/hewlett-packard.webp');
+      }
+      &.asus {
+        background-image: url('../img/brands/asus.webp');
+      }
+      &.acer {
+        background-image: url('../img/brands/acer-2011.webp');
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .brands {
+    display: none;
+  }
+}

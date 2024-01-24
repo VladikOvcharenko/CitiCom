@@ -1,0 +1,1 @@
+In the project, I employed HTML5, SCSS, and JS as the main technology stack. Additionally, I integrated Swiper slider, smooth-scroll functionality, and utilized the Gulp project builder. For form validation, I utilized just-validate and inputmask. To enable feedback, the Telegram API was connected.

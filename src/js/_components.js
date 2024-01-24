@@ -1,0 +1,6 @@
+import './components/sliders'
+import './components/menu'
+import './components/scroll'
+import './components/validation'
+import './components/services'
+import './components/input'

@@ -1,0 +1,107 @@
+.services {
+  padding-top: var(--padding-container);
+
+  &-title {
+    font-weight: 900;
+  }
+  &-wrapper {
+    margin-top: 50px;
+  }
+  &-btn {
+    padding: 10px 0;
+  }
+  &-list {
+    grid-column: 8 span;
+    gap: 12px;
+    &__item {
+      height: 200px;
+      grid-column: 6 span;
+      flex-direction: column;
+      padding: 20px 25px;
+      justify-content: space-between;
+      align-items: flex-start;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      box-shadow: 0px -8px 30px 2px rgba(0, 0, 0, 0.1);
+      background: #fff;
+      transition: all 0.2s ease-in;
+
+      svg {
+        width: 40px;
+        height: 40px;
+        fill: var(--second-color);
+        transition: fill 0.2s ease-in;
+      }
+
+      &:hover {
+        transform: scale(1.03);
+        background: linear-gradient(270deg, #3b5fe1 0%, #3049a4 100%);
+        color: var(--light-color);
+        svg {
+          fill: var(--light-color);
+        }
+      }
+      &.active {
+        transform: scale(1.03);
+        background: linear-gradient(270deg, #3b5fe1 0%, #3049a4 100%);
+        color: var(--light-color);
+        svg {
+          fill: var(--light-color);
+        }
+      }
+    }
+  }
+
+  &-info {
+    grid-column: 4 span;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__title {
+      font-size: 24px;
+    }
+    &__problem {
+      margin-top: 18px;
+      font-size: 18px;
+      font-weight: 900;
+    }
+    &__descr {
+      margin-top: 14px;
+      font-size: 14px;
+    }
+    &-wrapper {
+      opacity: 0;
+      display: none;
+      transition: all 0.3s ease;
+      &.active {
+        display: block;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    &-wrapper {
+      margin-top: 50px;
+    }
+    &-list {
+      grid-column: 12 span;
+      &__item {
+        padding: 10px;
+      }
+    }
+    &-info {
+      grid-column: 12 span;
+      &__title {
+        font-size: 24px;
+      }
+    }
+    &-btn {
+      padding: 14px 0;
+      margin-top: 30px;
+      max-width: 400px;
+    }
+  }
+}

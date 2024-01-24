@@ -1,0 +1,25 @@
+.btn {
+  height: 42px;
+  font-size: 18px;
+  font-weight: 200;
+  color: var(--light-color);
+  border-radius: 4px;
+  text-align: center;
+  background: var(--accent-color);
+  width: 100%;
+  transition: all 0.4s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 8px 0px rgba(230, 58, 28, 0.297);
+  }
+}
+@media (max-width: 610px) {
+  .btn {
+    font-size: 14px;
+  }
+}
+@media (max-width: 450px) {
+  .btn {
+  }
+}

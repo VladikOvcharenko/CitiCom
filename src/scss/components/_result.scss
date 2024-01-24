@@ -1,0 +1,83 @@
+.result {
+  padding-top: var(--padding-container);
+
+  &-title {
+    text-align: center;
+  }
+  &-list {
+    margin-top: 80px;
+    gap: 40px;
+    &__item {
+      grid-column: 4 span;
+      padding-left: 70px;
+      background-repeat: no-repeat;
+      background-size: 60px 60px;
+      background-position: left center;
+      justify-content: center;
+
+      &-1 {
+        background-image: url('../img/svg/circle-20.svg');
+      }
+      &-2 {
+        background-image: url('../img/svg/circle-40.svg');
+      }
+      &-3 {
+        background-image: url('../img/svg/circle-60.svg');
+      }
+      &-4 {
+        background-image: url('../img/svg/circle-80.svg');
+      }
+      &-5 {
+        background-image: url('../img/svg/circle-100.svg');
+      }
+    }
+    &__wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__title {
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+    &__descr {
+      margin-top: 8px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .result {
+    padding: 50px 0;
+    &-list {
+      &__item {
+        grid-column: 6 span;
+      }
+    }
+  }
+}
+@media (max-width: 490px) {
+  .result {
+    &-title {
+      font-size: 28px;
+    }
+    &-list {
+      margin-top: 30px;
+      gap: 20px;
+
+      &__item {
+        display: flex;
+        align-items: center;
+        grid-column: 12 span;
+        min-height: 60px;
+        max-width: 370px;
+        // padding-left: 10px;
+
+        background-repeat: no-repeat;
+        background-size: 50px 50px;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: 'Lato', sans-serif;
+  --second-font: 'Russo One';
+  --content-width: 1170px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --gap: 20px;
+
+  --padding-container: 80px;
+  @media (max-width: 450px) {
+    --padding-container: 40px;
+  }
+
+  // colors
+  --light-color: #fff;
+  --bg-color: #fbfbfb;
+  --accent-color: #e63a1c;
+  --second-color: #234eec;
+  --dark-color: #000;
+  --gray-color: rgba(86, 86, 86, 0.5);
+  --text-color: rgba(40, 39, 39, 0.8);
+  --overflow-color: rgba(4, 3, 3, 0.75);
+
+  // font-size
+  --title-size: 48px;
+  --text-size: 16px;
+}

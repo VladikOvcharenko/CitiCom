@@ -1,0 +1,91 @@
+.clients {
+  padding-top: var(--padding-container);
+  &-title {
+    text-align: center;
+  }
+
+  &-wrapper {
+    margin-top: 40px;
+  }
+  &-slider {
+    padding: 10px;
+  }
+
+  &-slide {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  &-item {
+    grid-column: 1fr;
+    padding: 18px;
+    border-radius: 8px;
+    min-height: 200px;
+    box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.1);
+    img {
+      width: 50px;
+      height: 50px;
+    }
+
+    &__author {
+      gap: 8px;
+      img {
+        grid-column: 3 span;
+        grid-row: 2 span;
+      }
+    }
+
+    &__title {
+      align-items: flex-start;
+    }
+    &__name {
+      grid-column: 9 span;
+      font-weight: 900;
+    }
+    &__problem {
+      grid-column: 9 span;
+      font-size: 12px;
+    }
+    &__descr {
+      margin-top: 12px;
+      font-size: 14px;
+    }
+  }
+  &-nav {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+  }
+  &-btn {
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+.swiper-pagination {
+  max-width: 200px;
+  top: 0;
+  justify-content: center;
+  position: relative;
+}
+
+@media (max-width: 868px) {
+  .clients {
+    &-slide {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media (max-width: 550px) {
+  .clients {
+    padding-top: 40px;
+    &-slide {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+  }
+}

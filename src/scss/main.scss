@@ -1,0 +1,27 @@
+// базовые подключения
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'settings';
+
+// подключения компонентов страницы
+@import './components/header';
+@import './components/hero';
+@import './components/services';
+@import './components/facts';
+@import './components/result';
+@import './components/about';
+@import './components/discount';
+@import './components/examples';
+@import './components/clients';
+@import './components/brands';
+
+@import './components/about-us';
+
+@import './components/services-box';
+
+@import './components/footer';
+
+// тестовые стили, удалите их
+@import './components/btn';
+@import './components/form-input';

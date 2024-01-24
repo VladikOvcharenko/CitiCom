@@ -1,0 +1,124 @@
+.examples {
+  padding-top: var(--padding-container);
+
+  &-container {
+    z-index: 3;
+  }
+  &-title {
+    text-align: center;
+  }
+  &-wrapper {
+    position: relative;
+  }
+  &-slider {
+    padding: 10px;
+    margin-top: 30px;
+  }
+  &-slide {
+    padding: 30px;
+    box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.1);
+  }
+  &-descr {
+    margin-top: 24px;
+    gap: 30px;
+  }
+  &-btn {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+
+    background-color: var(--light-color);
+    border-radius: 100%;
+    box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.1);
+    svg {
+      width: 25px;
+      height: 25px;
+      fill: var(--accent-color);
+    }
+    &--prev {
+      left: -16px;
+    }
+    &--next {
+      right: -16px;
+    }
+  }
+  &-item {
+    &__title {
+      font-size: 24px;
+    }
+    &__wrapper {
+      margin-top: 24px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--gray-color);
+    }
+
+    &__img {
+      grid-column: 6 span;
+      justify-items: center;
+      width: 100%;
+      height: 348px;
+      background-color: var(--gray-color);
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__text {
+      grid-column: 6 span;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .examples {
+    &-item {
+      &__img {
+        grid-column: 12 span;
+        width: 100%;
+        height: 350px;
+        background-color: var(--gray-color);
+      }
+      &__text {
+        grid-column: 12 span;
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  .examples {
+    &-item {
+      &__img {
+        grid-column: 12 span;
+        width: 100%;
+        height: 200px;
+        background-color: var(--gray-color);
+      }
+      &__text {
+        grid-column: 12 span;
+      }
+      &__title {
+        margin: 0;
+        font-size: 18px;
+      }
+      &__wrapper {
+        margin-top: 20px;
+        padding-bottom: 12px;
+      }
+    }
+    &-slider {
+      padding: 10px;
+      margin-top: 12px;
+    }
+    &-slide {
+      padding: 18px;
+    }
+    &-descr {
+      margin-top: 12px;
+      gap: 30px;
+    }
+  }
+}
