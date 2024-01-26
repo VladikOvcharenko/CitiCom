@@ -1,0 +1,57 @@
+.services-page {
+  padding: var(--padding-container);
+  &-container {
+    text-align: center;
+  }
+  &-list {
+  }
+  &-item {
+    position: relative;
+    grid-column: 4 span;
+    flex-direction: column;
+
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 20px 20px 50px;
+    box-shadow: 4px 2px 18px 8px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+    svg {
+      width: 70px;
+      height: 70px;
+      fill: var(--accent-color);
+    }
+    &__title {
+      margin-top: 20px;
+      font-size: 20px;
+      text-align: center;
+    }
+    &__wrapper {
+      margin-top: 20px;
+      text-align: left;
+    }
+    &__descr {
+      padding-left: 32px;
+      line-height: 24px;
+      background-image: url('../img/svg/ok.svg');
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size: 28px;
+    }
+    a {
+      position: absolute;
+      right: 20px;
+
+      bottom: 20px;
+      margin-top: 40px;
+      text-align: center;
+
+      color: var(--accent-color);
+    }
+  }
+  // &-table {
+  //   td {
+  //     border: 1px solid #000;
+  //   }
+  // }
+}
