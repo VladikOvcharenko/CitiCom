@@ -31,9 +31,17 @@
         background-image: url('../img/svg/circle-100.svg');
       }
       &-6 {
-        background-image: url('../img/svg/done.svg');
-        // background-position: center;
+        background-image: url('../img/svg/ok.svg');
+
         background-size: 64px 64px;
+        &__done {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url('../img/work-done.png');
+          background-size: 170px 60px;
+          height: 100%;
+          width: 100%;
+        }
       }
     }
     &__wrapper {
