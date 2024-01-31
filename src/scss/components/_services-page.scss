@@ -79,14 +79,14 @@
         }
       }
     }
-    &__note {
-      margin-top: 30px;
-      p {
-        font-size: 14px;
-        &:first-child {
-          font-size: 18px;
-          font-weight: 700;
-        }
+  }
+  &-note {
+    margin-top: 30px;
+    p {
+      font-size: 14px;
+      &:first-child {
+        font-size: 18px;
+        font-weight: 700;
       }
     }
   }
