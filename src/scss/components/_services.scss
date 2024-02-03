@@ -6,6 +6,7 @@
   }
   &-wrapper {
     margin-top: 50px;
+    gap: 34px;
   }
   &-btn {
     padding: 10px 0;
@@ -27,8 +28,8 @@
       transition: all 0.2s ease-in;
 
       svg {
-        width: 40px;
-        height: 40px;
+        width: 54px;
+        height: 54px;
         fill: var(--second-color);
         transition: fill 0.2s ease-in;
       }
@@ -39,6 +40,11 @@
         color: var(--light-color);
         svg {
           fill: var(--light-color);
+          margin: 0 auto;
+        }
+        span {
+          font-size: 20px;
+          color: var(--light-color);
         }
       }
       &.active {
@@ -47,8 +53,17 @@
         color: var(--light-color);
         svg {
           fill: var(--light-color);
+
+          margin: 0 auto;
+        }
+        span {
+          font-size: 20px;
+          color: var(--light-color);
         }
       }
+    }
+    &__price {
+      color: var(--accent-color);
     }
   }
 
@@ -87,13 +102,20 @@
       margin-top: 50px;
     }
     &-list {
+      margin-right: 15px;
       grid-column: 12 span;
       &__item {
         padding: 10px;
       }
+      &__descr {
+        font-size: 14px;
+        line-height: 130%;
+      }
     }
     &-info {
+      margin-right: 15px;
       grid-column: 12 span;
+
       &__title {
         font-size: 24px;
       }

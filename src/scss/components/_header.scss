@@ -14,7 +14,6 @@
     backdrop-filter: blur(10px);
   }
   &-container {
-    padding: 0;
     justify-content: space-between;
   }
 
@@ -32,8 +31,10 @@
       color: var(--accent-color);
       font-size: 40px;
       letter-spacing: 6px;
+      line-height: 1;
     }
     &__descr {
+      line-height: 1;
       font-size: 14px;
     }
   }

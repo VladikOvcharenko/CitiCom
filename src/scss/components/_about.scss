@@ -18,7 +18,7 @@
     padding: 0 20px;
   }
   &-descr {
-    margin-top: 30px;
+    margin-top: 20px;
   }
   &-bg {
     width: 100%;
@@ -81,7 +81,12 @@
       background-position: -350px center;
     }
 
+    &-wrapper {
+      line-height: 100%;
+    }
+
     &-descr {
+      margin-top: 10px;
       font-size: 14px;
     }
   }

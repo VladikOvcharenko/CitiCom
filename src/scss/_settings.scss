@@ -133,6 +133,7 @@ a {
 .text {
   margin: 0;
   font-size: 16px;
+  line-height: 150%;
 }
 
 .color-text {
@@ -160,5 +161,28 @@ a {
   }
   @media (max-width: 450px) {
     font-size: 14px;
+  }
+}
+
+.break-line {
+  position: relative;
+  margin-top: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-image: url(../img/keyboard-bg.jpeg);
+  background-size: cover;
+  background-position: center;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--gray-color);
+  }
+
+  @media (max-width: 450px) {
+    margin-top: 60px;
+    height: 60px;
   }
 }

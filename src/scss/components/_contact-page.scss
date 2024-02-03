@@ -1,7 +1,7 @@
 .contact {
   &-container {
-    margin-top: 120px;
-    margin-bottom: 160px;
+    margin-top: var(--padding-container);
+
     h1 {
       text-align: center;
     }
@@ -17,13 +17,6 @@
   }
 }
 
-@media (max-width: 850px) {
-  .contact {
-    &-container {
-      margin: 150px 0;
-    }
-  }
-}
 @media (max-width: 450px) {
   .contact {
     &-container {

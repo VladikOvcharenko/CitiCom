@@ -1,5 +1,6 @@
 .facts {
   padding-top: var(--padding-container);
+  gap: 40px;
 
   &-left {
     position: relative;
@@ -57,7 +58,7 @@
     }
 
     span {
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 900;
       color: var(--accent-color);
     }
